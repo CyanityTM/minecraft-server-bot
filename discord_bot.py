@@ -15,9 +15,6 @@ minecraft_process = None
 @bot.event
 async def on_ready():
     print(f"{bot.user} is ready and online!")
-    channel = bot.get_channel(CHANNEL_ID)
-    if channel is not None:
-        await channel.send("Bot online.")
 
 @bot.event
 async def on_message(message):
